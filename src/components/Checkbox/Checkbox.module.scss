@@ -1,0 +1,42 @@
+.text{
+    font-family: JetBrains Mono;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkBox{
+    appearance: none;
+    margin-right: 2rem;
+    background-color: #24232C;
+    width: 2rem;
+    height: 2rem;
+    border: 0.2rem solid #E6E5EA;
+}
+
+.checkBox:checked{
+    background-color: #A4FFAF;
+    border: 0.2rem solid #A4FFAF;
+    background-image: url(../../assets/images/icon-check.svg);
+    background-size: 100% 100%;
+}
+
+@media screen and (min-width: 768px){
+    .text{
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .checkBox:hover{
+        border: 0.2rem solid #A4FFAF;
+        cursor: pointer;
+    }
+}

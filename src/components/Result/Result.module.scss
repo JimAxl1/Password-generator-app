@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #24232C;
+    padding: 1.5rem;
+    width: 100%;
+    overflow: auto;
+}
+
+.text::selection{
+    background-color: #24232C;
+}
+
+input.text:focus {
+    outline-width: 0;
+}
+
+.text{
+    font-family: JetBrains Mono;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 0px;
+    margin: 0;
+    background-color: #24232C;
+    border: none;
+    color: #E6E5EA;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+}
+  
+.visible, .hidden{
+    visibility: visible;
+    color: #A4FFAF;
+    font-family: JetBrains Mono;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.hidden {
+    opacity: 0;
+    transition: visibility 0s 3.5s, opacity 2s linear;
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        padding: 1.5rem 2.5rem;
+    }
+
+    .text{
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+
+    .visible, .hidden{
+        font-size: 1.8rem;
+    }
+}
